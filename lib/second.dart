@@ -1,15 +1,14 @@
 //import 'package:cakeproject/routes.dart';
-import 'package:cakeproject/routes.dart';
 import 'package:flutter/material.dart';
 //import 'package:text_divider/text_divider.dart';
-class ViewPage extends StatefulWidget {
-  const ViewPage({super.key});
+class SecondPage extends StatefulWidget {
+  const SecondPage({super.key});
 
   @override
-  State<ViewPage> createState() => _ViewPageState();
+  State<SecondPage> createState() => _SecondPageState();
 }
 
-class _ViewPageState extends State<ViewPage> {
+class _SecondPageState extends State<SecondPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +31,7 @@ class _ViewPageState extends State<ViewPage> {
             
             crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("   The perfect sweets for\n   any celebration !!!!",style: TextStyle(fontSize:25,fontWeight: FontWeight.bold,fontFamily: AutofillHints.creditCardFamilyName,color: Color.fromARGB(144, 127, 2, 2)),)
+                Text("  Choose your favorites\n from here !!!!",style: TextStyle(fontSize:25,fontWeight: FontWeight.bold,fontFamily: AutofillHints.creditCardFamilyName,color: Color.fromARGB(144, 127, 2, 2)),)
              
            ,  Padding(
              padding: const EdgeInsets.fromLTRB(60,20,10,20),
@@ -57,9 +56,7 @@ class _ViewPageState extends State<ViewPage> {
                   
                       width: 80,
                        height: 80, 
-                       child:InkWell(onTap:(){
-                        Navigator.pushNamed(context, MyRoute.second);
-                       },child: Image.asset("assets/images/candle.png")) 
+                       child:InkWell(onTap:(){},child: Image.asset("assets/images/candle.png")) 
                    ),
                  ),
                   Padding(
@@ -112,16 +109,16 @@ class _ViewPageState extends State<ViewPage> {
                              height: 180,  
                              child: Column(
                                children: [
-                                 Image.asset("assets/images/pastry.png",height:100,),
+                                 Image.asset("assets/images/cake1.png",height:100,),
                                  Padding(
                                    padding: const EdgeInsets.fromLTRB(0,10,30,0),
                                    child: Column(
                                      children: [
-                                       Text("Strawberry Cupcake",style: TextStyle(fontWeight: FontWeight.bold,color: Color.fromARGB(255, 248, 117, 161),fontSize:15),),
+                                       Text("Strawberry cake",style: TextStyle(fontWeight: FontWeight.bold,color: Color.fromARGB(255, 248, 117, 161),fontSize:15),),
                                      Row(
                                        children: [
-                                         Text("  \$${170}",style: TextStyle(fontSize:15,color: Colors.grey.shade900,fontWeight: FontWeight.w600),),
-                                        Text("/per piece",style: TextStyle(fontSize:15,color: Colors.grey.shade700,fontWeight: FontWeight.w600),)
+                                         Text("  \$${870}",style: TextStyle(fontSize:15,color: Colors.grey.shade900,fontWeight: FontWeight.w600),),
+                                        //Text("/per piece",style: TextStyle(fontSize:15,color: Colors.grey.shade700,fontWeight: FontWeight.w600),)
                                        ],
                                      )
                                      ],
@@ -140,16 +137,16 @@ class _ViewPageState extends State<ViewPage> {
                                height: 180,  
                                  child: Column(
                                children: [
-                                 Image.asset("assets/images/colourful.png",height:100,),
+                                 Image.asset("assets/images/mix.png",height:100,),
                                  Padding(
                                    padding: const EdgeInsets.fromLTRB(0,20,30,0),
                                    child: Column(
                                      children: [
-                                       Text("Casatta Cupcake",style: TextStyle(fontWeight: FontWeight.bold,color: Color.fromARGB(255, 248, 117, 161),fontSize:15),),
+                                       Text("Mixfruit Cake",style: TextStyle(fontWeight: FontWeight.bold,color: Color.fromARGB(255, 248, 117, 161),fontSize:15),),
                                      Row(
                                        children: [
-                                         Text("  \$${290}",style: TextStyle(fontSize:15,color: Colors.grey.shade900,fontWeight: FontWeight.w600),),
-                                        Text("/per piece",style: TextStyle(fontSize:15,color: Colors.grey.shade700,fontWeight: FontWeight.w600),)
+                                         Text("  \$${490}",style: TextStyle(fontSize:15,color: Colors.grey.shade900,fontWeight: FontWeight.w600),),
+                                       // Text("/per piece",style: TextStyle(fontSize:15,color: Colors.grey.shade700,fontWeight: FontWeight.w600),)
                                        ],
                                      )
                                      ],
@@ -173,16 +170,16 @@ class _ViewPageState extends State<ViewPage> {
                              height: 180,  
                               child: Column(
                                children: [
-                                 Image.asset("assets/images/blue.png",height:100,),
+                                 Image.asset("assets/images/chococake.png",height:100,),
                                  Padding(
                                    padding: const EdgeInsets.fromLTRB(0,10,30,0),
                                    child: Column(
                                      children: [
-                                       Text("Blueberry Cupcake",style: TextStyle(fontWeight: FontWeight.bold,color: Color.fromARGB(255, 248, 117, 161),fontSize:15),),
+                                       Text("Black Forest Cupcake",style: TextStyle(fontWeight: FontWeight.bold,color: Color.fromARGB(255, 248, 117, 161),fontSize:15),),
                                      Row(
                                        children: [
-                                         Text("  \$${370}",style: TextStyle(fontSize:15,color: Colors.grey.shade900,fontWeight: FontWeight.w600),),
-                                      Text("/per piece",style: TextStyle(fontSize:15,color: Colors.grey.shade700,fontWeight: FontWeight.w600),)
+                                         Text("  \$${970}",style: TextStyle(fontSize:15,color: Colors.grey.shade900,fontWeight: FontWeight.w600),),
+                                     // Text("/per piece",style: TextStyle(fontSize:15,color: Colors.grey.shade700,fontWeight: FontWeight.w600),)
                                        ],
                                      )
                                      ],

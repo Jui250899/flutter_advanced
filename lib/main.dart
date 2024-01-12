@@ -1,5 +1,6 @@
 import 'package:cakeproject/homescreen.dart';
 import 'package:cakeproject/routes.dart';
+import 'package:cakeproject/second.dart';
 import 'package:cakeproject/signin.dart';
 import 'package:cakeproject/view.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         MyRoute.homepage:(context) =>HomePage(),
-        MyRoute.viewpage:(context) => ViewPage()
+        MyRoute.viewpage:(context) => ViewPage(),
+        MyRoute.second:(context) => SecondPage()
       },
     );
   }
